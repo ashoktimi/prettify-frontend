@@ -1,0 +1,79 @@
+.NavBar-name-div{
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.NavBar-name{
+    font-family: 'Caveat', cursive;
+    color: purple;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+}
+.NavBar-name:hover{
+  color: purple;
+}
+.navbar-toggler{
+  color:rgb(243, 224, 230);
+  border: none;
+}
+
+.NavBar-auth_Btn{
+  margin-left: 1rem;
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Heebo', sans-serif;
+} 
+.Toggler-logout{
+  margin-right: 10rem;
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Heebo', sans-serif;
+  margin-left: 2.5rem;
+  margin-top: 10px;
+  font-size: 20px;
+} 
+.Toggler-logout:hover{
+  color: black;
+}
+
+.Toggler-bag{
+  color:black;
+  text-decoration: none;
+  margin-left: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.Toggler-bag:hover{
+  color: black;
+}
+
+
+
+/* for toggler elements */
+.Toggler-h3{
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: black;
+  font-size: 2rem;
+}
+
+.Toggler-ul {
+  list-style: none;
+}
+
+.Toggler-ul li {
+  margin: 3rem 0;
+  border-bottom: .5px solid rgb(233, 227, 227);
+}
+
+.Toggler-ul a {
+  font-weight: bold;
+  text-decoration: none;  
+  color: #333;
+}
+.Toggler-ul a:hover {
+  color: #9c6a8d;
+}

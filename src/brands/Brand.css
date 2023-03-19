@@ -1,0 +1,10 @@
+.Head-Name{
+ text-transform: uppercase;
+ color: white;
+ background-color: rgb(37, 150, 190);
+ padding: 5px;
+ border-radius: 5px;
+ letter-spacing: 5px;
+ font-size: 25px;
+ padding-left: 10px;
+}
