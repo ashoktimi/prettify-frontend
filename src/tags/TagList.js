@@ -12,6 +12,8 @@ import './TagList.css'
 const TagLists = ({ tags, handleTagHover }) =>{
   return (
     <>
+    {tags !== undefined ?
+    <>
     {tags && handleTagHover ?
       <div>
           <ul className="TagLists-ul">
@@ -31,6 +33,10 @@ const TagLists = ({ tags, handleTagHover }) =>{
      ))}
     </ul>
     }
+    </>
+    :
+    null
+  }
     </>
   );
 }

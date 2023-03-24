@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ProductCard card"
+  >
+    <div
+      class="ProductCard-imgDiv"
+    />
+    <div
+      class="ProductCard-body card-body"
+    >
+      <div
+        class="card-title h5"
+        style="text-align: center;"
+      />
+      <div
+        style="display: flex; justify-content: center;"
+      >
+        <small
+          class="ProductCard-price"
+        >
+           $ 
+        </small>
+      </div>
+      <div
+        class="ProductCard-rating"
+      >
+        <small>
+          ()
+        </small>
+        <p>
+           () Reviews 
+        </p>
+      </div>
+      <button
+        class="productAddBtn btn"
+        type="button"
+      >
+        add to cart
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

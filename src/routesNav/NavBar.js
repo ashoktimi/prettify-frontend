@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import PrettifyApi from "../api/api";
 import BrandList from "../brands/BrandList";
 import CategoryList from "../categories/CategoyList";
-import TagList from "../tags/TagLIst";
+import TagList from "../tags/TagList";
 import Toggler from './Toggler';
 import Cart from "../cart/Cart";
 import UserContext from "../auth/userContext";

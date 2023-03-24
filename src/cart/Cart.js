@@ -36,8 +36,6 @@ const Cart = () => {
     dispatch(clearCart());
   };
 
-  console.log((cart.cartItems).length)
-
   return (
     <>
     <Offcanvas show={showOffcanvas} onHide={handleToggleOffcanvas} placement="end">

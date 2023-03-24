@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toggler BrandList component renders correctly 1`] = `<div />`;
+
+exports[`Toggler CategoryList component renders correctly 1`] = `<div />`;
+
+exports[`Toggler TagLists component renders correctly 1`] = `<div />`;
+
+exports[`Toggler TypeList component renders correctly 1`] = `
+<div>
+  <div
+    class="LoadingSpinner"
+  >
+    Loading ...
+  </div>
+</div>
+`;
+
+exports[`Toggler matches snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="navbar navbar-expand-bg navbar-light"
+    style="padding: 0px;"
+  >
+    <div
+      class="container-fluid"
+    >
+      <button
+        aria-controls="offcanvasNavbar-expand"
+        aria-label="Toggle navigation"
+        class="navbar-toggler collapsed"
+        type="button"
+      >
+        <span
+          class="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        class="NavBar-name-div"
+      >
+        <a
+          class="NavBar-name"
+          href="/products"
+        >
+          Prettify
+        </a>
+      </div>
+      <div
+        aria-labelledby="offcanvasNavbarLabel-expand"
+        class="offcanvas offcanvas-start"
+        id="offcanvasNavbar-expand"
+      >
+        <h3
+          class="Toggler-h3"
+        >
+          Please login to see.
+        </h3>
+      </div>
+    </div>
+  </nav>
+</DocumentFragment>
+`;

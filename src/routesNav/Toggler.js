@@ -3,15 +3,13 @@ import { Link } from 'react-router-dom';
 import PrettifyApi from "../api/api";
 import BrandList from "../brands/BrandList";
 import CategoryList from "../categories/CategoyList";
-import TagList from "../tags/TagLIst";
+import TagList from "../tags/TagList";
 import TypeList from "../types/TypeList";
 import UserContext  from "../auth/userContext";
 import 'bootstrap/dist/css/bootstrap.css';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { Container, Navbar, Offcanvas } from 'react-bootstrap'
 import './Toggler.css';
-
-
 
 
 const Toggler = ({ logout, brands, categories, tags }) =>{
@@ -24,8 +22,6 @@ const Toggler = ({ logout, brands, categories, tags }) =>{
   const [showTypes, setShowTypes] = useState(false);
   const [value, setValue] = useState('nail'); 
   const [typeDetail, setTypeDetail] = useState([]);
-
-
   
   useEffect(() =>{
     async function getBrands() {
@@ -95,7 +91,7 @@ const Toggler = ({ logout, brands, categories, tags }) =>{
               aria-labelledby={`offcanvasNavbarLabel-expand`}
               placement="start"
             >
-            {currentUser ?
+            {currentUser && brands && categories && tags && typeDetail ?
               <>
               <Offcanvas.Header closeButton>
                 {(brands.length > 0 || categories.length || tags.length> 0 || typeDetail.length > 0) && (showBrands || showCategories || showTags || showTypes)&& (

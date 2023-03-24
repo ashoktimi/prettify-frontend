@@ -7,7 +7,7 @@ import SearchForm from "../helpers/SearchForm";
 import { Row, Col } from 'react-bootstrap';
 
 const ProductList = () =>{
-    console.debug("ProductList");
+    // console.debug("ProductList");
     const [products, setProducts] = useState(null);
 
 

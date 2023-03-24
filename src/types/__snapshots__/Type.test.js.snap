@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Type matches snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="NavBtm navbar navbar-expand navbar-light"
+  />
+</DocumentFragment>
+`;
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="NavBtm navbar navbar-expand navbar-light"
+  />
+</DocumentFragment>
+`;

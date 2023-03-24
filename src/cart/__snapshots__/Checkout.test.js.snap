@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckoutPage matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    style="width: 70%; margin-left: 15%; margin-top: 5rem; display: flex; justify-content: space-between;"
+  >
+    <form
+      class=""
+    >
+      <h2>
+        Personal Information
+      </h2>
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <div>
+            <label
+              class="form-label"
+              for="formFirstName"
+            >
+              First Name:
+            </label>
+            <input
+              class="form-control"
+              id="formFirstName"
+              name="firstName"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="col"
+        >
+          <div>
+            <label
+              class="form-label"
+              for="formLastName"
+            >
+              Last Name:
+            </label>
+            <input
+              class="form-control"
+              id="formLastName"
+              name="lastName"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <label
+          class="form-label"
+          for="formEmail"
+        >
+          Email:
+        </label>
+        <input
+          class="form-control"
+          id="formEmail"
+          name="email"
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <div>
+            <label
+              class="form-label"
+              for="formCountry"
+            >
+              Country:
+            </label>
+            <input
+              class="form-control"
+              id="formCountry"
+              name="country"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="col"
+        >
+          <div>
+            <label
+              class="form-label"
+              for="formPostalCode"
+            >
+              Postal Code:
+            </label>
+            <input
+              class="form-control"
+              id="formPostalCode"
+              name="postalCode"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <label
+          class="form-label"
+          for="formPhone"
+        >
+          Phone Number:
+        </label>
+        <input
+          class="form-control"
+          id="formPhone"
+          name="phone"
+          type="tel"
+          value=""
+        />
+      </div>
+      <h2>
+        Payment Details
+      </h2>
+      <div>
+        <label
+          class="form-label"
+          for="formCardNumber"
+        >
+          Card Number:
+        </label>
+        <input
+          class="form-control"
+          id="formCardNumber"
+          name="cardNumber"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <div>
+            <label
+              class="form-label"
+              for="formExpMonth"
+            >
+              Expiration Month:
+            </label>
+            <input
+              class="form-control"
+              id="formExpMonth"
+              name="expMonth"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="col"
+        >
+          <div>
+            <label
+              class="form-label"
+              for="formExpYear"
+            >
+              Expiration Year:
+            </label>
+            <input
+              class="form-control"
+              id="formExpYear"
+              name="expYear"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="col"
+        >
+          <div>
+            <label
+              class="form-label"
+              for="formCVV"
+            >
+              CVV:
+            </label>
+            <input
+              class="form-control"
+              id="formCVV"
+              name="cvv"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="col"
+        >
+          <div>
+            <label
+              class="form-label"
+              for="billingAddress"
+            >
+              Billing Address:
+            </label>
+            <input
+              class="form-control"
+              id="billingAddress"
+              name="billing"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        class="btn btn-warning"
+        style="margin-top: 10px;"
+        type="button"
+      >
+        Submit
+      </button>
+    </form>
+    <div
+      style="background-color: white; padding: 0px 3rem 5rem 3rem; width: 40%; margin-left: 1rem; margin-top: 5rem;"
+    >
+      <h5
+        style="text-align: center; margin-bottom: 1.5rem; margin-top: 2rem;"
+      >
+        IN YOUR BAG
+      </h5>
+      <div
+        style="display: flex; justify-content: space-between;"
+      >
+        <p>
+          Subtotal:
+        </p>
+        <p>
+          $0
+        </p>
+      </div>
+      <div
+        style="display: flex; justify-content: space-between;"
+      >
+        <p>
+          Estimated Shipping:
+        </p>
+        <p>
+          0
+        </p>
+      </div>
+      <div
+        style="display: flex; justify-content: space-between;"
+      >
+        <p>
+          Estimated Tax:
+        </p>
+        <p>
+          0
+        </p>
+      </div>
+      <div
+        style="display: flex; justify-content: space-between;"
+      >
+        <h5>
+          Total:
+        </h5>
+        <h5>
+           $0
+        </h5>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

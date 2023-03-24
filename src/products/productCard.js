@@ -28,11 +28,11 @@ const ProductCard = ({ id, name, price, priceSign, prevPrice, image_link, rating
     handleToggleOffcanvas();
   };
 
-
- return (
-  <>
+  return (
+   <>
     <Card className='ProductCard'>
       <div  className='ProductCard-imgDiv'>
+      {name !== undefined ? 
       <Link to={`/products/${(name).trim().replace(/ /g, "-")}/${id}`} key={id}>
       <Card.Img
         variant='top'
@@ -43,22 +43,24 @@ const ProductCard = ({ id, name, price, priceSign, prevPrice, image_link, rating
           e.target.src = defaultImage;
         }}
       />
-      </Link>
+      </Link> : null }
       </div>
       <Card.Body className='ProductCard-body'>
         <Card.Title style={{ textAlign: 'center'}}>{name}</Card.Title>
         <div style={{display:'flex', justifyContent:'center'}}>
-          {priceSign ?
-          <>
-            <small className="ProductCard-price"> {priceSign}{price} </small> 
-            <small className="ms-2 text-muted priceBefore"> before {priceSign}{prevPrice.toFixed(2)} </small>   
-          </>
-          :
-          <>
-            <small className="ProductCard-price"> ${price} </small> 
-            <small className="ms-2 text-muted priceBefore"> before ${prevPrice.toFixed(2)} </small>   
-          </>
-          }
+          {(priceSign && prevPrice !== undefined) ? (
+           <>
+            <small className="ProductCard-price"> {priceSign}{price} </small>
+            <small className="ms-2 text-muted priceBefore"> before {priceSign}{prevPrice.toFixed(2)} </small>
+           </>
+           ) : (
+           <>
+            <small className="ProductCard-price"> ${price} </small>
+            {prevPrice !== undefined && (
+              <small className="ms-2 text-muted priceBefore"> before ${prevPrice.toFixed(2)} </small>
+            )}
+           </>
+          )}
         </div>
           <div className="ProductCard-rating">
             <small>({rating})</small>

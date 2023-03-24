@@ -10,7 +10,7 @@ import Home from "../home/Home";
 import NavBar from "./NavBar";
 import CategoryList from "../categories/CategoyList";
 import Category from "../categories/Category";
-import TagLists from "../tags/TagLIst";
+import TagLists from "../tags/TagList";
 import Tag from "../tags/Tag";
 import TypeList from "../types/TypeList";
 import Type from "../types/Type";

@@ -1,4 +1,4 @@
-import React, { useContext }  from 'react';
+import React, { useContext, useEffect }  from 'react';
 import { useNavigate } from 'react-router-dom';
 import UserContext from '../auth/userContext';
 import { BsFacebook } from 'react-icons/bs';
@@ -8,21 +8,28 @@ import './Home.css';
 
 
 const Home = () =>{    
+ 
     const { currentUser } = useContext(UserContext);
     const navigate = useNavigate();
-  
+
+    useEffect(() => {
+      if(currentUser){
+        navigate('/products');
+      }     
+    }, []);
+
     return(
         <>
     {!currentUser ?
      <div style={{marginTop: '5rem', width: '80%', marginLeft: '10%'}}>       
       
-        <div class="Home">
+        <div className="Home">
           <h2>Welcome!!</h2>
        
           <p className="lead" >All brands makeup items in one, convenient place. Get started by signing in or creating an account.</p>
           <p>Explore our collection of makeup items and find your perfect match.</p>
           <h5>Start Shopping Today</h5>
-          <a href="/login" class="btn btn-primary">Shop Now</a>
+          <a href="/login" className="btn btn-primary">Shop Now</a>
         </div>
       <div className="feature-boxes">
         <div className="feature-box">
@@ -45,14 +52,14 @@ const Home = () =>{
           <h5 style={{textAlign: 'center'}}>Join Our Community</h5>
           <p>Connect with other makeup enthusiasts and share your beauty journey with us on social media.</p>
           <div style={{ display: 'flex', justifyContent: 'center', }}>
-            <a className='primary' style={{margin:'15px'}}><BsFacebook/></a>
-            <a className='primary' style={{margin:'15px'}}><BsTwitter /></a>
-            <a className='primary' style={{margin:'15px'}}><BsInstagram /></a>
+            <button className='Home-social'><BsFacebook/></button>
+            <button className='Home-social'><BsTwitter/></button>
+            <button className='Home-social'><BsInstagram/></button>
           </div>
         </div>
       </div>  
      </div>
-    : navigate('/products') }   
+    : null}   
     </>
     )
 }

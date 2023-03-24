@@ -1,4 +1,4 @@
-import Routers from './routesNav/Routers';
+import Routers from '../routesNav/Routers';
 import './App.css';
 
 function App() {

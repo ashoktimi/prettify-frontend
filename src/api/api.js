@@ -13,7 +13,7 @@ class PrettifyApi{
     static token;
 
     static async request(endpoint, data = {}, method = "get"){
-        console.log("API call:", endpoint, data, method);
+        // console.log("API call:", endpoint, data, method);
 
         const url = `${BASE_URL}/${endpoint}`;
         const headers = { Authorization: `Bearer ${PrettifyApi.token}` };
@@ -136,19 +136,6 @@ class PrettifyApi{
       let res = await this.request(`carts/${username}`);
       return res.user;
     }
-    
-
-    // /** Apply to a job */
-    // static async applyToJob(username, id) {
-    //   await this.request(`users/${username}/jobs/${id}`, {}, "post");
-    // }
-
-
-    // /** Save user profile page. */
-    // static async saveProfile(username, data) {
-    //   let res = await this.request(`users/${username}`, data, "patch");
-    //   return res.user;
-    // }
 }
 
 export default PrettifyApi;

@@ -23,3 +23,9 @@
     flex-direction: column;
   }
   
+  .Home-social{
+    margin: 15px;
+    border: none;
+    background-color: transparent;
+    color: rgb(2, 117, 216);
+  }

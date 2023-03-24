@@ -11,27 +11,33 @@ import './BrandList.css'
 const BrandList = ({ brands, handleHover }) =>{
     return (
       <>
-      {brands && handleHover ?
-        <div >
-          <ul className="BrandList-column">
-            {brands.map(b => (            
-              <li className="BrandList-li" key={b.id} onClick={handleHover}>
-                 <Link className="BrandList-link" to={`/brands/${(b.name).trim().replace(/ /g, "-")}/${b.id}`}>
-                   {b.name}
-                 </Link>  
-              </li>       
+       {brands !== undefined ?
+        <>
+        {brands && handleHover ?
+          <div >
+            <ul className="BrandList-column">
+              {brands.map(b => (            
+                <li className="BrandList-li" key={b.id} onClick={handleHover}>
+                   <Link className="BrandList-link" to={`/brands/${(b.name).trim().replace(/ /g, "-")}/${b.id}`}>
+                     {b.name}
+                   </Link>  
+                </li>       
+              ))}
+            </ul> 
+          </div>
+          :
+          <ul className="Brandlist-toggler-ul">
+            {brands.map(brand => (
+            <li key={brand.id}><Link to={`/brands/${brand.name}/${brand.id}`}>{brand.name}</Link></li>
             ))}
-          </ul> 
-        </div>
-        :
-        <ul className="Brandlist-toggler-ul">
-          {brands.map(brand => (
-          <li key={brand.id}><Link to={`/brands/${brand.name}/${brand.id}`}>{brand.name}</Link></li>
-          ))}
-        </ul>  
-      }
+          </ul>  
+        } 
+        </> 
+         : 
+         null
+        }
       </>
-    );
+    );  
 }
 
 export default  BrandList;

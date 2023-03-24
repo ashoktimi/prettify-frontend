@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LoadingSpinner from "../helpers/LoadingSpinner";
 import './TypeList.css'
 
 const TypeList = ({ types }) =>{
  
- 
+ if(!types) return <LoadingSpinner />;
   return (
       <>
-          {types.length > 1 ?
+        {types.length > 1 ?
           <div className="TypeLists">
           {types.map(t => (
             <Link className="TypeList-link" to={`/types/${t.type}/${t.name}`} key={t.id}>
@@ -21,7 +22,7 @@ const TypeList = ({ types }) =>{
               {(types[0].name).trim().replace("_", " ")}
             </Link> 
           </div>
-          }
+        }
      </>
     );
 }
