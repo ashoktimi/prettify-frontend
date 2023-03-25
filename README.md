@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# Prettify Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Prettify](https://prettify-makeup.surge.sh)
+
+Prettify is an e-commerce web application that offers a wide range of makeup items from different brands, categorized by type, product category, and tags. Users can browse through the product catalog, add items to their cart, and check out when they're ready.
+
+The application has advanced search and filtering options that make it easy for users to find specific products. Prettify also offers additional features, such as creating an account and managing account information, to enhance the user experience.
+
+## Technologies Used
+Prettify is built using a variety of technologies, including:
+
+Express and Node.js for server-side programming
+PostgreSQL for data storage
+HTML, CSS, and JavaScript for front-end development
+React and Redux for building the user interface
+Bootstrap for styling
 
 ## Available Scripts
 

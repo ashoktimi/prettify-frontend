@@ -44,6 +44,7 @@ const Home = () =>{
           <h5 style={{textAlign: 'center'}}>Why Choose Our App?</h5>
           <ul>
             <li className="lead">We offer a wide selection of makeup items from different brands.</li>
+            <li className="lead">Find a variety of makeup options to fit your lifestyle and preferences, from liquid to powder to cream.</li>
             <li className="lead">Our platform is easy to use and user-friendly.</li>
             <li className="lead">We prioritize the safety and quality of our products.</li>
           </ul>
