@@ -8,12 +8,12 @@ The application has advanced search and filtering options that make it easy for 
 
 ## Technologies Used
 Prettify is built using a variety of technologies, including:
--Express and Node.js for server-side programming
--PostgreSQL for data storage
--HTML, CSS, and JavaScript for front-end development
--React and Redux for building the user interface
--React-Bootstrap for styling
--others library: JSON Web Token (JWT), axios, Jest, bcrypt, pg, jsonschema
+- Express and Node.js for server-side programming
+- PostgreSQL for data storage
+- HTML, CSS, and JavaScript for front-end development
+- React and Redux for building the user interface
+- React-Bootstrap for styling
+- others library: JSON Web Token (JWT), axios, Jest, bcrypt, pg, jsonschema
 
 ## Available Scripts
 
